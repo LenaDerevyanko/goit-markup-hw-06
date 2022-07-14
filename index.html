@@ -388,7 +388,7 @@
                         </label>
                     </div>
                     <button class="button-send" type="submit"><span class="text">Подписаться</span>
-                        <svg width="24px" height="24px">
+                        <svg class="icon" width="24px" height="24px" aria-hidden="true">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
@@ -405,26 +405,39 @@
             </button>
 
             <h3 class="modal-title">Оставьте свои данные,мы вам перезвоним</h3>           
-                <form class="feedback">
+                <form class="form">
                     <div class="form-field">
-                        <label for="name">Имя</label>
-                            <input type="text" name="name" id="name"/>
+                        <label for="name" class="form-label">Имя</label>
+                            <input type="text" class="form-input" name="name" id="name" autofocus/>
+                                <svg class="icon" width="12px" height="12px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-name1"></use>
+                                </svg>
                     </div>
                     <div class="form-field">
-                        <label for="tel">Телефон</label>
-                            <input type="tel" name="tel" id="tel"/>
+                        <label for="tel" class="form-label">Телефон</label>
+                            <input type="tel" class="form-input" name="tel" id="tel"/>
+                            <svg class="icon" width="13px" height="13px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-tel1"></use>
+                            </svg>
                     </div>
                     <div class="form-field">
-                        <label for="mail">Почта</label>
-                            <input type="email" name="mail" id="mail"/>
+                        
+                        <label for="mail" class="form-label">Почта</label>
+                            <input type="email" class="form-input" name="mail" id="mail"/>
+                            <svg class="icon" width="15px" height="12px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-email1"></use>
+                            </svg>
                     </div>
                     <div class="form-text">
                         <label>Комментарий
-                            <textarea class="text" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                            <textarea class="textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
                         </label>
                     </div>
                     <div class="form-accept">
-                        <input type="checkbox" name="accept" value="license" checked />
+                        <svg class="icon-egree" width="11px" height="8px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-egree"></use>
+                        </svg>
+                        <input class="checkbox" type="checkbox" name="accept" value="license" checked />
                         <label>Соглашаюсь с рассылкой и принимаю
                                 <a class="accept" href="#">Условия договора</a>
                         </label>
